@@ -102,7 +102,7 @@ class PlayList {
     }
 
     private boolean isValidIndex(int i) {
-        if (i < 0 || i >= size || size >= maxSize) {
+        if (i < 0 || i > size || size >= maxSize) {
             return false;
         }
         return true;
